@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+
+    <!--css-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+
+    <!--fonts-->
+    <!--switzer-->
+    <link href="https://fonts.cdnfonts.com/css/switzer" rel="stylesheet">
+
+    <!-- Anton -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylecontact.css" />
+
+</head>
+<body>
+    <header>
+    <!--header-->
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="logo" width="160px"></a>
+    <ul class="nav-links">
+        <li><a href="index.html" class="navbar-link">Home </a></li>
+        <li><a href="#FAQ" class="navbar-link">FAQ</a></li> 
+        <li><a href="activities.html" class="navbar-link">Plan your next activity</a></li>
+        <li><a href="contactform.html" target="_blank" class="navbar-link">Contact Us</a></li>
+    </ul>
+
+    <div class="socials">
+        <a href="#">Socials</a>
+        <a href="#"><i class="ri-twitter-x-line"></i></a>
+        <a href="#"><i class="ri-instagram-line"></i></a>
+        <a href="#"><i class="ri-facebook-line"></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </div>
+    </header>
+
+  <!-- contact form -->
+  <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form name="contactForm" onsubmit="return validateForm(event)" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+
+        <input type="text" id="name" name="name" required placeholder="Full name"/>
+
+        <input type="email" id="email" name="email" required placeholder="Email"/>
+
+        <input type="text" id="subject" name="subject" required placeholder="Message subject"/>
+
+        <textarea id="message" name="message" rows="5" required placeholder="Message"></textarea>
+
+        <button type="submit" class="btn">Submit</button>
+
+        <div id="alert" style="margin-top: 10px;"></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- footer -->
+    <section class="footer">
+        <div class="footer-box">
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logo" width="200px"></a>
+            <a href="#">123 Coastal Road, Tamarin, Black River, Mauritius</a>
+            <a href="#">+230 56787493</a>
+            <a href="mailto:info@travelershq.mu">info@travelershq.mu</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>About</h3>
+            <a href="#">Backstory</a>
+            <a href="#">Partnerships</a>
+            <a href="#">Our Team</a>
+            <a href="#">Join Us</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Help</h3>
+            <a href="#">FAQs</a>
+            <a href="#">Contact Us</a>
+    </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
